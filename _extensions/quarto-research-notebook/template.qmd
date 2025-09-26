@@ -1,0 +1,126 @@
+---
+title: "Research Notebook"
+author: "Your Name"
+date: "`r Sys.Date()`"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    code-fold: true
+    code-summary: "Show code"
+    embed-resources: true
+    theme: default
+    number-sections: true
+  pdf:
+    toc: true
+    number-sections: true
+    geometry: margin=1in
+execute:
+  cache: true
+  warning: false
+  message: false
+  echo: true
+editor: visual
+---
+
+```{r setup, include=FALSE}
+#| label: setup
+#| include: false
+
+# Load required libraries
+library(knitr)
+library(dplyr)
+library(ggplot2)
+library(here)
+
+# Set global chunk options
+knitr::opts_chunk$set(
+  fig.width = 8,
+  fig.height = 6,
+  fig.align = "center",
+  out.width = "80%"
+)
+
+# Create necessary directories
+if (!dir.exists("r_scripts")) dir.create("r_scripts")
+```
+
+# Introduction
+
+## Research Questions
+
+Describe your research questions and hypotheses here.
+
+## Data Overview
+
+Brief description of your dataset and variables of interest.
+
+# Data Exploration
+
+```{r data-structure}
+#| label: fig-data-structure
+#| fig-cap: "Data structure overview"
+#| cache: true
+
+# Your data exploration code here
+```
+
+## Descriptive Statistics
+
+<details>
+<summary>Click to expand descriptive statistics</summary>
+
+```{r descriptive-stats}
+#| label: fig-descriptive-stats
+#| fig-cap: "Descriptive statistics"
+#| cache: true
+
+# Your descriptive statistics code here
+```
+
+</details>
+
+# Hypothesis Testing
+
+## Research Question 1
+
+```{r hypothesis-1}
+#| label: fig-hypothesis-1
+#| fig-cap: "Analysis for research question 1"
+#| cache: true
+
+# Your hypothesis testing code here
+```
+
+# Results
+
+## Statistical Models
+
+```{r models}
+#| label: fig-models
+#| fig-cap: "Statistical models and results"
+#| cache: true
+
+# Your modeling code here
+```
+
+## Key Findings
+
+Summarize your key findings here.
+
+# Discussion
+
+Interpret your results and discuss implications.
+
+# Conclusion
+
+Brief summary of conclusions and future directions.
+
+# Session Information
+
+```{r session-info}
+#| label: session-info
+#| echo: false
+
+sessionInfo()
+```
