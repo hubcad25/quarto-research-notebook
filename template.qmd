@@ -20,7 +20,7 @@ execute:
   warning: false
   message: false
   echo: true
-editor: visual
+editor: source
 ---
 
 ```{r setup, include=FALSE}
