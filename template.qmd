@@ -29,7 +29,7 @@ editor: source
 #| label: setting
 #| cache: false
 
-source("./r_scripts/00_settings.R")
+source("./r_scripts/00_setting.R")
 
 ```
 
